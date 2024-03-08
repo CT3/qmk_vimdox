@@ -21,10 +21,12 @@
 #BOOTLOADER = rp2040
 
 #BOARD = GENERIC_RP_RP2040
-
 ENCODER_MAP_ENABLE = yes
 #BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
 #ENCODER_MAP_ENABLE = yes
 WS2812_DRIVER = vendor
 SERIAL_DRIVER = vendor
+UNICODE_COMMON = yes
+UNICODE_ENABLE = yes
+
 #EXTRAKEY_ENABLE = yes       # Audio control and System control

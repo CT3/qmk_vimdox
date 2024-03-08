@@ -18,9 +18,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [QWERTY] = LAYOUT_split_3x6_3(
         //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_B,                                 KC_J, KC_L, KC_U, KC_Y, KC_SCLN,  MT(MOD_LGUI, KC_DEL),
+       KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_B,                                 KC_J, KC_L, KC_U, KC_Y, KC_SCLN,  MT(KC_APP, KC_DEL),
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_ESC, KC_A, KC_R, KC_S, KC_T, KC_G,                                           KC_M, KC_N, KC_E, KC_I, KC_O, KC_UNDS,
+        KC_ESC, KC_A, KC_R, KC_S, KC_T, KC_G,                                           KC_M, KC_N, KC_E, KC_I, KC_O, KC_LGUI,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT, KC_Z, KC_X, KC_C, KC_D, KC_V,                                          KC_K, KC_H, KC_COMM, KC_DOT, KC_SLSH, TT(NAV),
         //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -28,14 +28,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //`--------------------------'  `--------------------------'
 
         ),
-
     [SYMB] = LAYOUT_split_3x6_3(
         //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        TO(ADJUST), KC_EXLM, KC_AT, KC_NUHS, KC_AMPR, KC_LCBR,                            KC_RCBR, KC_PMNS, KC_PLUS, KC_EQL, KC_BTN1, KC_BTN2,
+        TO(ADJUST), KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_LCBR,                            KC_RCBR, KC_PMNS, KC_PLUS, KC_EQL, KC_BTN1, KC_BTN2,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        TO(QWERTY), KC_PERC, KC_DLR, KC_HASH, KC_ASTR, KC_LPRN,                        KC_RPRN, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_HYPR,
+        TO(QWERTY), KC_PERC, KC_AMPR, KC_TILD, KC_ASTR, KC_LPRN,                        KC_RPRN, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_HYPR,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_LSFT, KC_INT4, KC_CIRC, KC_GRV, KC_INT3, KC_LBRC,                              KC_RBRC, KC_QUOT, KC_DQUO, KC_TILD, KC_NUBS, KC_MEH,
+        KC_LSFT, KC_UNDS, KC_CIRC, UC(0x20AC), UC(0x00A3), KC_LBRC,                   KC_RBRC, KC_QUOT, KC_DQUO,KC_GRV ,KC_NUHS, KC_MEH,
         //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                             KC_TRNS, KC_TRNS, KC_TRNS,                KC_TRNS, KC_TRNS, KC_TRNS
         //`--------------------------'  `--------------------------'
@@ -55,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [ADJUST] = LAYOUT_split_3x6_3(
         //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        XXXXXXX, KC_WSCH, XXXXXXX, KC_SLEP, KC_WAKE, KC_PWR,                           RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_K, RGB_M_G,
+        XXXXXXX, KC_WSCH, XXXXXXX, XXXXXXX, KC_PSCR, XXXXXXX,                           RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_K, RGB_M_G,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         TO(QWERTY), KC_MPRV, KC_MNXT, KC_MPLY, KC_MSTP, KC_MSEL,                      RGB_HUI,RGB_HUD, RGB_VAI, RGB_VAD, RGB_SAI, RGB_SAD,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|

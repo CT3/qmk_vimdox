@@ -11,7 +11,7 @@
 #    define OLED_DISPLAY_128X32
 #    define SPLIT_OLED_ENABLE
 #endif
-
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 // Not yet available in `info.json`
 #ifdef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 128
